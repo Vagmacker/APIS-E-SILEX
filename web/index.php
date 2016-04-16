@@ -26,6 +26,9 @@ $app->get('/clientes', function() use($app){
       return $app->json($array);
 });
 
+//Rota da fase 1
+//$app->mount('/clientes', include 'Fase1.php');
+
 $app->run();
 
 ?>
