@@ -17,11 +17,11 @@ $app->get('/exemplo', function() use($app){
 });
 
 $app->get('/clientes', function() use($app){
-      $array = [
+      $array = array(
           'nome'=> 'Joao',
           'email'=> 'email@exemplo.com',
           'CPF'=> '000.000.000-00'
-      ];
+      );
 
       return $app->json($array);
 });
